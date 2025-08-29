@@ -23,7 +23,7 @@ export default function Header() {
 
             <button className="relative" onClick={() => setOpenDropdown(openDropdown === 'Company' ? null : 'Company')}>Company <span>{openDropdown === "Company" ? "▲" : "▼"}</span></button>
           {openDropdown === 'Company' && (
-            <section className="absolute left-80 flex border bg white">
+            <section className="absolute left-80 flex border bg-white hover:underline">
               <ul>
                 <li>🚄History</li>
                 <li>👩🏽‍🤝‍👩🏻Our team</li>
