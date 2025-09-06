@@ -5,11 +5,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-between w-full h-30 items-center p-10">
+      <header className="flex justify-between w-full h-30 items-center">
         <section className=" flex mt-3">
           <h1 className="font text-5xl">Snap</h1>
           <nav>
-            <button className="relative p-10" onClick={() => setOpenDropdown(openDropdown === 'Features' ? null : 'Features')}>Features <span>{openDropdown === "Features" ? "▲" : "▼"}</span></button>
+            <button className="relative mt-3 p-2" onClick={() => setOpenDropdown(openDropdown === 'Features' ? null : 'Features')}>Features <span>{openDropdown === "Features" ? "▲" : "▼"}</span></button>
             {openDropdown === 'Features' && ( 
               <section className="absolute border bg-white hover:underline">
                 <ul>
@@ -21,9 +21,9 @@ export default function Header() {
               </section>
             )}
 
-            <button className="relative" onClick={() => setOpenDropdown(openDropdown === 'Company' ? null : 'Company')}>Company <span>{openDropdown === "Company" ? "▲" : "▼"}</span></button>
+            <button className="relative mt-3 p-2 " onClick={() => setOpenDropdown(openDropdown === 'Company' ? null : 'Company')}>Company <span>{openDropdown === "Company" ? "▲" : "▼"}</span></button>
           {openDropdown === 'Company' && (
-            <section className="absolute left-80 flex border bg-white hover:underline">
+            <section className="absolute left-51 flex border bg-white hover:underline">
               <ul>
                 <li>🚄History</li>
                 <li>👩🏽‍🤝‍👩🏻Our team</li>
