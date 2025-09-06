@@ -5,13 +5,13 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-between w-full h-30 items-center">
-        <section className=" flex mt-3">
+      <header className="flex justify-between w-full h-30 p-7 items-center">
+        <section className=" flex mt-3 p-7 ">
           <h1 className="font text-5xl">Snap</h1>
           <nav>
             <button className="relative mt-3 p-2" onClick={() => setOpenDropdown(openDropdown === 'Features' ? null : 'Features')}>Features <span>{openDropdown === "Features" ? "▲" : "▼"}</span></button>
             {openDropdown === 'Features' && ( 
-              <section className="absolute border bg-white hover:underline">
+              <section className="absolute border p-1 bg-white hover:underline">
                 <ul>
                   <li> 📃Todo list</li>
                   <li> 📅Carlender</li>
@@ -21,9 +21,9 @@ export default function Header() {
               </section>
             )}
 
-            <button className="relative mt-3 p-2 " onClick={() => setOpenDropdown(openDropdown === 'Company' ? null : 'Company')}>Company <span>{openDropdown === "Company" ? "▲" : "▼"}</span></button>
+            <button className="relative mt-3 p-2 click " onClick={() => setOpenDropdown(openDropdown === 'Company' ? null : 'Company')}>Company <span>{openDropdown === "Company" ? "▲" : "▼"}</span></button>
           {openDropdown === 'Company' && (
-            <section className="absolute left-51 flex border bg-white hover:underline">
+            <section className="absolute left-64 p-1 flex border bg-white hover:underline">
               <ul>
                 <li>🚄History</li>
                 <li>👩🏽‍🤝‍👩🏻Our team</li>
